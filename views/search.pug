@@ -1,4 +1,12 @@
 extends layouts/main
 
 block content
-  p Search
+  .search__header
+    h3 Searching for #{searchingBy}
+  .search__videos
+    each item in videos
+      +videoblock({
+        title: item.title,
+        views: item.views,
+        videoFile: item.videoFile
+      })
