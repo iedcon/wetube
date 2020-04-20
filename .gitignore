@@ -115,3 +115,7 @@ dist
 .pnp.*
 
 package-lock.json
+
+uploads/
+static/
+.DS_Store
